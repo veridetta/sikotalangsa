@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
-$koneksi = new mysqli("localhost:1235/", "root", "", "sikotalangsa");
+$koneksi = new mysqli("localhost:1235", "root", "", "sikotalangsa");
 function tanggal($tgl)
 {
     $tanggal = substr($tgl, 8, 2);
