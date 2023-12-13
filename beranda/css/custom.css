@@ -16,7 +16,7 @@
         padding: 8px !important;
         height:auto !important;
     }
-    .orgchart .node .content {height: auto !important;width: 180px !important;}
+    .orgchart .node .content {height: auto !important;width: 190px !important;}
     .orgchart .middle-level .title { background-color: #006699; }
     .orgchart .middle-level .content { border-color: #006699; }
     .orgchart .product-dept .title { background-color: #009933; }

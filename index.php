@@ -117,12 +117,12 @@
             nodeContent: "<p class='m-0'><small>"+jabatan.nama+"</small></p><p class='m-0'><small>NIP. "+jabatan.nip+"</small></p><p class='m-0'><small>"+jabatan.keterangan+"</small></p>",
         };
     });
-
-    kasubbag.forEach(function(kasubbag) {
-        var middleIndex = Math.floor(kasubbag.children.length / 2);
-        kasubbag.children[middleIndex].children = kasubbag.children[middleIndex].children || [];
-        kasubbag.children[middleIndex].children = kasubbag.children[middleIndex].children.concat(analisis_pelaksana);
-    });
+    
+    var middleKasubbagIndex = Math.floor(kasubbag.length / 2);
+    var middleKasubbag = kasubbag[middleKasubbagIndex];
+    var middleChildIndex = Math.floor(middleKasubbag.children.length / 2);
+    middleKasubbag.children[middleChildIndex].children = middleKasubbag.children[middleChildIndex].children || [];
+    middleKasubbag.children[middleChildIndex].children = middleKasubbag.children[middleChildIndex].children.concat(analisis_pelaksana);
     
     var chart = $('#chart-container').orgchart({
         'data': {
